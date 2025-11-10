@@ -14,7 +14,7 @@ export async function getWeather({
   units?: "metric" | "imperial" | "standard";
 }) {
   const res = await fetch(
-    `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,alerts&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=${units}&exclude=minutely,alerts&appid=${API_KEY}`
   );
 
   if (!res.ok) throw new Error("Failed to fetch weather data");

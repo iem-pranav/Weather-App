@@ -3,7 +3,7 @@ import { type ReactNode } from "react"
 
 type Props = {
   children: ReactNode
-  title?: string
+  title?: ReactNode
   className?: string
   childrenClassName?: string
 }
